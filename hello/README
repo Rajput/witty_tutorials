@@ -1,0 +1,13 @@
+First requirement install witty on you system
+add ppa repoistory in synaptic manager
+ppa:pgquiles/wt
+and reload the synaptic package manger and install witty
+
+---------------How to run witty tutorial-------------
+1) you have build directory in application. It is empty
+cd hello/build
+cmake ..
+make
+~/hello/build/source/hello.wt --http-port 10000 --http-addr 0.0.0.0 --docroot .
+
+localhost:10000
