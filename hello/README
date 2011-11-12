@@ -1,6 +1,13 @@
 First requirement install witty on you system
-add ppa repoistory in synaptic manager
-ppa:pgquiles/wt
+add ppa repoistory 
+sudo add-apt-repository ppa:pgquiles/wt
+sudo apt-get update
+sudo apt-get install witty witty-dbg witty-dev witty-doc cmake qt4-qmake qt4-designer qt4-dev-tools
+sudo apt-get install libwt-dev 
+sudo apt-get install libwthttp-dev
+sudo apt-get install libwtfcgi-dev
+sudo apt-get install libwtext-dev
+sudo apt-get install libwtdbosqlite-dev
 and reload the synaptic package manger and install witty
 
 ---------------How to run witty tutorial-------------
