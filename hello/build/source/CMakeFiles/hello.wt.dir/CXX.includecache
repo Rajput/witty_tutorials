@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/parvinder/witty_tutorials/hello/source/test.C
+test.h
+/home/parvinder/witty_tutorials/hello/source/test.h
+
+/home/parvinder/witty_tutorials/hello/source/test.h
+Wt/WApplication
+-
+Wt/WBreak
+-
+Wt/WContainerWidget
+-
+Wt/WLineEdit
+-
+Wt/WPushButton
+-
+Wt/WText
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/hello.wt.dir/test.C.o  -o hello.wt -rdynamic -lwt -lwthttp -lwtdbo -lwtdbosqlite3 -lwtdbopostgres 
