@@ -1,65 +1,26 @@
 /*
- * Copyright (C) 2008 Emweb bvba, Heverlee, Belgium.
+ * Copyright (C) 2011 Parvinder Rajput and H.S.Rai of Guru Nanak Dev Engg. College, Ludhiana 141006 India
  *
  * See the LICENSE file for terms of use.
  */
 
-#include <Wt/WApplication>
-#include <Wt/WBreak>
-#include <Wt/WContainerWidget>
-#include <Wt/WLineEdit>
-#include <Wt/WPushButton>
-#include <Wt/WText>
+#include <Wt/WApplication>	// Essential for every witty application 
+#include <Wt/WContainerWidget> 	// Required to  use widget every application use widget so it is essential.
+#include <Wt/WText>		// Required to display text.
 
-// c++0x only, for std::bind
-// #include <functional>
-
-using namespace Wt;
+using namespace Wt;	
 
 /*
  * A simple hello world application class which demonstrates how to react
  * to events, read input, and give feed-back.
  */
-class HelloApplication : public WApplication
+class WebPage : public WApplication
 {
 public:
-  HelloApplication(const WEnvironment& env);
-
-private:
-  
-  
-
-  
+  WebPage(const WEnvironment& env);
 };
 
-/*
- * The env argument contains information about the new session, and
- * the initial request. It must be passed to the WApplication
- * constructor so it is typically also an argument for your custom
- * application constructor.
-*/
-HelloApplication::HelloApplication(const WEnvironment& env)
-  : WApplication(env)
-{
-  setTitle("info");                               // application title
 
-  root()->addWidget(new WText(" Firstname = Parvinder ")); 
-  root()->addWidget(new WBreak()); 
-  root()->addWidget(new WText(" Middlename= Kumar ")); // show some text
-  root()->addWidget(new WBreak()); 
-  root()->addWidget(new WText(" Lastname =  Rajput "));
- 
-}
-
-
-WApplication *createApplication(const WEnvironment& env)
-{
-  /*
-   * You could read information from the environment to decide whether
-   * the user has permission to start a new application
-   */
-  return new HelloApplication(env);
-}
 
 
 
