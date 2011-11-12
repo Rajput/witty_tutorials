@@ -8,11 +8,13 @@ sudo apt-get install libwthttp-dev
 sudo apt-get install libwtfcgi-dev
 sudo apt-get install libwtext-dev
 sudo apt-get install libwtdbosqlite-dev
-and reload the synaptic package manger and install witty
+
+-----------------------------Download the example from github-------------------------------
+git clone git://github.com/Rajput/witty_tutorials.git
 
 ---------------How to run witty tutorial-------------
-1) you have build directory in application. It is empty
-cd hello/build
+1) mkdir hello/build
+2)cd hello/build
 cmake ..
 make
 ~/hello/build/source/hello.wt --http-port 10000 --http-addr 0.0.0.0 --docroot .
